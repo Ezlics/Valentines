@@ -14,9 +14,18 @@ body {
     justify-content: center;
     align-items: center;
     background-color: #FFBBEC;
-
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
 }
 
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 30;
+    }
+}
 .container {
     display: flex;
     flex-direction: column;
